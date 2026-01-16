@@ -19,6 +19,9 @@ export const metadata: Metadata = {
   title: "Model Picker",
   description:
     "Curated AI model recommendations for your next agent project - fetch the latest models for coding, summarization, and research",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({

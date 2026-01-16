@@ -28,11 +28,11 @@ export default async function Home() {
           Curated AI Model Picker
         </p>
         <h1 className="mx-auto max-w-3xl text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">
-          Always use the best model for your task
+          Use the best model for your task
         </h1>
         <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
-          Hand-picked AI model recommendations with primary and fallback
-          options. Query the API, pin a snapshot, and ship with confidence.
+          Hand-picked AI model recommendations for your AI agents because using
+          outdated models isn't the vibe.
         </p>
         <HeroCode html={html} code={codeSnippet} />
       </header>
