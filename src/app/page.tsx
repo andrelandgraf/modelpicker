@@ -25,8 +25,15 @@ export default function Home() {
 
       <footer className="border-t pt-8 text-center text-sm text-muted-foreground">
         <p>
-          Built for developers who want reliable AI integrations without the
-          guesswork.
+          built with love by{" "}
+          <a
+            href="https://x.com/andrelandgraf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-foreground"
+          >
+            @andrelandgraf
+          </a>
         </p>
       </footer>
     </div>
