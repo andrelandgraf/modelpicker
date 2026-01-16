@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Model Picker",
   description:
-    "Curated AI model recommendations with primary and fallback options",
+    "Curated AI model recommendations for your next agent project - fetch the latest models for coding, summarization, and research",
 };
 
 export default function RootLayout({

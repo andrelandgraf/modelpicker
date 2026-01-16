@@ -49,7 +49,12 @@ export function ModelCell({ model }: ModelCellProps) {
             <span className="text-muted-foreground">Also on:</span>
             <div className="flex items-center gap-1">
               {model.fallbackProviders.map((provider) => (
-                <ProviderLogo key={provider} provider={provider} size={16} />
+                <ProviderLogo
+                  key={provider}
+                  provider={provider}
+                  size={16}
+                  showTitle
+                />
               ))}
             </div>
           </div>

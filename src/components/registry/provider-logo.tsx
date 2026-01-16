@@ -3,11 +3,16 @@ import Image from "next/image";
 interface ProviderLogoProps {
   provider: string;
   size?: number;
+  showTitle?: boolean;
 }
 
-export function ProviderLogo({ provider, size = 32 }: ProviderLogoProps) {
+export function ProviderLogo({
+  provider,
+  size = 32,
+  showTitle = false,
+}: ProviderLogoProps) {
   const src = `https://models.dev/logos/${provider}.svg`;
-  return (
+  const image = (
     <Image
       src={src}
       alt={`${provider} logo`}
@@ -16,4 +21,10 @@ export function ProviderLogo({ provider, size = 32 }: ProviderLogoProps) {
       className="rounded-sm"
     />
   );
+
+  if (showTitle) {
+    return <span title={provider}>{image}</span>;
+  }
+
+  return image;
 }
