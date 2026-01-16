@@ -103,9 +103,9 @@ export function RegistryTable() {
               <h3 className="mb-4 text-lg font-semibold capitalize">
                 {category}
               </h3>
-              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="grid auto-rows-fr gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {allModels.map(({ model, role, index }) => (
-                  <div key={model.id} className="relative">
+                  <div key={model.id} className="relative flex flex-col">
                     {role === "primary" && (
                       <span className="absolute -top-2 left-3 z-10 rounded-full bg-foreground px-2 py-0.5 text-[10px] font-semibold uppercase text-background">
                         Primary
