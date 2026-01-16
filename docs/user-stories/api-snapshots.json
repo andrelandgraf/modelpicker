@@ -1,0 +1,14 @@
+[
+  {
+    "category": "functional",
+    "description": "Operator lists available registry snapshots",
+    "steps": [
+      "Send GET request to /api/v1/snapshots",
+      "Verify HTTP status 200",
+      "Assert response payload exposes snapshots array",
+      "Confirm dates are sorted descending and match registry",
+      "Check Cache-Control header set for 24h caching"
+    ],
+    "passes": false
+  }
+]

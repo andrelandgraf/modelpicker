@@ -1,0 +1,14 @@
+[
+  {
+    "category": "functional",
+    "description": "Visitor explores registry via landing page",
+    "steps": [
+      "Load / to render landing experience",
+      "Use snapshot dropdown to switch between latest and dated snapshot",
+      "Use category dropdown to swap across coding, summarization, research",
+      "Verify compact table updates primary and fallbacks for each change",
+      "Open expanded table modal and confirm all categories display"
+    ],
+    "passes": false
+  }
+]

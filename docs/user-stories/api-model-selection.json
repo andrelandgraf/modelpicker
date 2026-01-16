@@ -1,0 +1,14 @@
+[
+  {
+    "category": "functional",
+    "description": "Consumer retrieves model lineup for category snapshot",
+    "steps": [
+      "Send GET request to /api/v1/latest/coding",
+      "Verify HTTP status 200",
+      "Assert response contains resolved date, category, primary, fallbacks",
+      "Confirm resolved date is concrete YYYY-MM-DD",
+      "Validate error shape by querying unknown snapshot and category"
+    ],
+    "passes": false
+  }
+]

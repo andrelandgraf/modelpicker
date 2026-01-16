@@ -1,0 +1,14 @@
+[
+  {
+    "category": "functional",
+    "description": "Operator inspects supported categories",
+    "steps": [
+      "Send GET request to /api/v1/categories",
+      "Verify HTTP status 200",
+      "Assert response includes categories array",
+      "Confirm array matches ['coding','summarization','research']",
+      "Check Cache-Control header allows 24h caching"
+    ],
+    "passes": false
+  }
+]

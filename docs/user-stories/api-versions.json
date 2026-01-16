@@ -1,0 +1,14 @@
+[
+  {
+    "category": "functional",
+    "description": "Operator fetches supported API versions",
+    "steps": [
+      "Send GET request to /api/versions",
+      "Verify HTTP status 200",
+      "Assert response includes versions array",
+      "Confirm array contains 'v1' entry",
+      "Check Cache-Control header allows 24h caching"
+    ],
+    "passes": false
+  }
+]
