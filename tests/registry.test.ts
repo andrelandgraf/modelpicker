@@ -21,6 +21,7 @@ const providerAliases: Record<string, string> = {
   mistral: "mistral",
   deepseek: "deepseek",
   perplexity: "perplexity",
+  minimax: "minimax",
 };
 
 const modelAliases: Record<string, string | undefined> = {
@@ -33,6 +34,10 @@ const modelAliases: Record<string, string | undefined> = {
   "deepseek/deepseek-v3": "deepseek/deepseek-reasoner",
   "openai/o-mini-high": "openai/o1-mini",
   "anthropic/claude-research": "openai/o3-deep-research",
+  // 2026-01-15 snapshot models
+  "anthropic/claude-opus-4-5": "anthropic/claude-sonnet-4-5",
+  "openai/gpt-5.2-codex": "openai/gpt-4.1",
+  "minimax/m2.1": "minimax/MiniMax-M2.1",
 };
 
 describe("registry structure", () => {

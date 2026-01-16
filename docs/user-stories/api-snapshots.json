@@ -9,6 +9,6 @@
       "Confirm dates are sorted descending and match registry",
       "Check Cache-Control header set for 24h caching"
     ],
-    "passes": false
+    "passes": true
   }
 ]

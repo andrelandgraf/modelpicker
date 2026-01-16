@@ -2,9 +2,13 @@ import {
   getSupportedCategories,
   getSnapshotDates,
 } from "@/lib/registry/registry";
+import { CopyButton } from "./copy-button";
 
 const categories = getSupportedCategories();
 const snapshots = getSnapshotDates();
+
+const codingCommand = "curl https://modelpicker.ai/api/v1/latest/coding";
+const snapshotCommand = `curl https://modelpicker.ai/api/v1/${getSnapshotDates()[0]}/research`;
 
 const endpoints = [
   {
@@ -73,17 +77,23 @@ export function HowItWorks() {
               <p className="mb-2 text-sm font-medium">
                 Get coding recommendations
               </p>
-              <pre className="overflow-x-auto rounded bg-background p-3 text-sm">
-                <code>{`curl https://modelpicker.dev/api/v1/latest/coding`}</code>
-              </pre>
+              <div className="relative">
+                <pre className="overflow-x-auto rounded bg-background p-3 pr-10 text-sm">
+                  <code>{codingCommand}</code>
+                </pre>
+                <CopyButton text={codingCommand} />
+              </div>
             </div>
             <div className="rounded-lg border bg-muted/30 p-4">
               <p className="mb-2 text-sm font-medium">
                 Pin to a specific snapshot
               </p>
-              <pre className="overflow-x-auto rounded bg-background p-3 text-sm">
-                <code>{`curl https://modelpicker.dev/api/v1/${snapshots[0]}/research`}</code>
-              </pre>
+              <div className="relative">
+                <pre className="overflow-x-auto rounded bg-background p-3 pr-10 text-sm">
+                  <code>{snapshotCommand}</code>
+                </pre>
+                <CopyButton text={snapshotCommand} />
+              </div>
             </div>
           </div>
         </div>

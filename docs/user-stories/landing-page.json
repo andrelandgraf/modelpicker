@@ -3,12 +3,13 @@
     "category": "functional",
     "description": "Visitor explores registry via landing page",
     "steps": [
-      "Load / to render landing experience",
-      "Use snapshot dropdown to switch between latest and dated snapshot",
-      "Use category dropdown to swap across coding, summarization, research",
-      "Verify compact table updates primary and fallbacks for each change",
-      "Open expanded table modal and confirm all categories display"
+      "Load / to render landing experience with header, model table, and how-it-works section",
+      "Verify GitHub link and theme toggle appear in header",
+      "Use category filter buttons (All, Coding, Summarization, Research) to filter displayed models",
+      "Use snapshot dropdown to switch between latest and dated snapshots",
+      "Verify model cards update for each category showing primary and fallback models",
+      "Scroll to How it works section and verify API documentation is displayed"
     ],
-    "passes": false
+    "passes": true
   }
 ]

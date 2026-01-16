@@ -14,7 +14,7 @@ GET /api/v1/{date}/{category}
 - `category`: `coding`, `summarization`, or `research`
 
 ```bash
-curl https://modelpicker.dev/api/v1/latest/coding
+curl https://modelpicker.ai/api/v1/latest/coding
 ```
 
 ### List categories

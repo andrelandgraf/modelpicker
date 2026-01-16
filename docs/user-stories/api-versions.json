@@ -9,6 +9,6 @@
       "Confirm array contains 'v1' entry",
       "Check Cache-Control header allows 24h caching"
     ],
-    "passes": false
+    "passes": true
   }
 ]

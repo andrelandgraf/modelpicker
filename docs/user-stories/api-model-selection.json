@@ -9,6 +9,6 @@
       "Confirm resolved date is concrete YYYY-MM-DD",
       "Validate error shape by querying unknown snapshot and category"
     ],
-    "passes": false
+    "passes": true
   }
 ]

@@ -43,6 +43,16 @@ export function ModelCell({ model }: ModelCellProps) {
           </div>
         )}
       </dl>
+      {model.fallbackProviders.length > 0 && (
+        <div className="flex items-center gap-1.5 text-xs">
+          <span className="text-muted-foreground">Also on:</span>
+          <div className="flex items-center gap-1">
+            {model.fallbackProviders.map((provider) => (
+              <ProviderLogo key={provider} provider={provider} size={16} />
+            ))}
+          </div>
+        </div>
+      )}
       {model.notes && (
         <p className="text-xs text-muted-foreground">{model.notes}</p>
       )}

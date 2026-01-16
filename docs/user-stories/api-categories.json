@@ -9,6 +9,6 @@
       "Confirm array matches ['coding','summarization','research']",
       "Check Cache-Control header allows 24h caching"
     ],
-    "passes": false
+    "passes": true
   }
 ]
