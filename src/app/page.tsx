@@ -6,7 +6,7 @@ import { HeroCode } from "@/components/registry/hero-code";
 const codeSnippet = `import { generateText } from "ai";
 
 const response = await fetch(
-  "https://modelpicker.ai/api/v1/latest/coding"
+  "https://modelpicker.ai/api/v1/latest/research"
 );
 const { primary } = await response.json();
 

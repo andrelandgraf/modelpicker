@@ -22,6 +22,21 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.svg",
   },
+  metadataBase: new URL("https://modelpicker.dev"),
+  openGraph: {
+    title: "Model Picker",
+    description:
+      "Hand-picked AI model recommendations for your agents. Query the API, pin a snapshot, and ship with confidence.",
+    siteName: "Model Picker",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Model Picker",
+    description:
+      "Hand-picked AI model recommendations for your agents. Query the API, pin a snapshot, and ship with confidence.",
+    creator: "@andrelandgraf",
+  },
 };
 
 export default function RootLayout({
