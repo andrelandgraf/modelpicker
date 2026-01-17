@@ -19,36 +19,22 @@ export default async function Image() {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        backgroundColor: "#0f0f0f",
+        backgroundColor: "#fafafa",
         position: "relative",
         overflow: "hidden",
       }}
     >
-      {/* Subtle gradient background */}
+      {/* Subtle gradient glow */}
       <div
         style={{
           position: "absolute",
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
+          top: "-200px",
+          left: "50%",
+          transform: "translateX(-50%)",
+          width: "800px",
+          height: "400px",
           background:
-            "radial-gradient(ellipse 80% 50% at 50% -20%, rgba(99, 102, 241, 0.15), transparent)",
-          display: "flex",
-        }}
-      />
-
-      {/* Grid pattern overlay */}
-      <div
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          backgroundImage:
-            "linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px)",
-          backgroundSize: "60px 60px",
+            "radial-gradient(ellipse, rgba(139, 92, 246, 0.08), transparent 70%)",
           display: "flex",
         }}
       />
@@ -60,84 +46,19 @@ export default async function Image() {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          gap: "24px",
-          padding: "48px",
+          gap: "20px",
+          padding: "40px",
           position: "relative",
         }}
       >
-        {/* Logo/Icon - matching favicon design */}
-        <div
-          style={{
-            width: "80px",
-            height: "80px",
-            borderRadius: "20px",
-            background: "linear-gradient(135deg, #6366f1, #8b5cf6, #d946ef)",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            boxShadow: "0 16px 32px rgba(139, 92, 246, 0.3)",
-          }}
-        >
-          {/* Crosshair icon */}
-          <svg
-            width="48"
-            height="48"
-            viewBox="0 0 32 32"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <line
-              x1="16"
-              y1="6"
-              x2="16"
-              y2="12"
-              stroke="white"
-              strokeWidth="2.5"
-              strokeLinecap="round"
-            />
-            <line
-              x1="16"
-              y1="20"
-              x2="16"
-              y2="26"
-              stroke="white"
-              strokeWidth="2.5"
-              strokeLinecap="round"
-            />
-            <line
-              x1="6"
-              y1="16"
-              x2="12"
-              y2="16"
-              stroke="white"
-              strokeWidth="2.5"
-              strokeLinecap="round"
-            />
-            <line
-              x1="20"
-              y1="16"
-              x2="26"
-              y2="16"
-              stroke="white"
-              strokeWidth="2.5"
-              strokeLinecap="round"
-            />
-            <circle cx="16" cy="16" r="5" fill="white" />
-            <circle cx="9" cy="9" r="2.5" fill="white" opacity="0.5" />
-            <circle cx="23" cy="9" r="2.5" fill="white" opacity="0.5" />
-            <circle cx="9" cy="23" r="2.5" fill="white" opacity="0.5" />
-            <circle cx="23" cy="23" r="2.5" fill="white" opacity="0.5" />
-          </svg>
-        </div>
-
         {/* Subtitle */}
         <div
           style={{
-            fontSize: "16px",
+            fontSize: "15px",
             fontWeight: 600,
             letterSpacing: "0.25em",
             textTransform: "uppercase",
-            color: "rgba(255, 255, 255, 0.5)",
+            color: "#737373",
             display: "flex",
           }}
         >
@@ -147,12 +68,12 @@ export default async function Image() {
         {/* Main headline */}
         <div
           style={{
-            fontSize: "56px",
+            fontSize: "52px",
             fontWeight: 600,
-            color: "white",
+            color: "#0a0a0a",
             textAlign: "center",
-            lineHeight: 1.1,
-            maxWidth: "900px",
+            lineHeight: 1.15,
+            maxWidth: "750px",
             display: "flex",
           }}
         >
@@ -162,49 +83,153 @@ export default async function Image() {
         {/* Description */}
         <div
           style={{
-            fontSize: "22px",
-            color: "rgba(255, 255, 255, 0.6)",
+            fontSize: "20px",
+            color: "#737373",
             textAlign: "center",
-            maxWidth: "700px",
+            maxWidth: "600px",
             lineHeight: 1.5,
             display: "flex",
+            marginBottom: "4px",
           }}
         >
-          Hand-picked AI model recommendations for your agents
+          Hand-picked AI model recommendations for your AI agents
         </div>
 
-        {/* URL badge */}
+        {/* Code window */}
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            backgroundColor: "#1a1a1a",
+            borderRadius: "14px",
+            padding: "0",
+            boxShadow:
+              "0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(0,0,0,0.05)",
+            width: "540px",
+            overflow: "hidden",
+          }}
+        >
+          {/* Window header */}
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "8px",
+              padding: "12px 16px",
+              borderBottom: "1px solid rgba(255,255,255,0.08)",
+            }}
+          >
+            {/* Traffic lights */}
+            <div
+              style={{
+                width: "11px",
+                height: "11px",
+                borderRadius: "50%",
+                backgroundColor: "#ff5f57",
+                display: "flex",
+              }}
+            />
+            <div
+              style={{
+                width: "11px",
+                height: "11px",
+                borderRadius: "50%",
+                backgroundColor: "#febc2e",
+                display: "flex",
+              }}
+            />
+            <div
+              style={{
+                width: "11px",
+                height: "11px",
+                borderRadius: "50%",
+                backgroundColor: "#28c840",
+                display: "flex",
+              }}
+            />
+            <div
+              style={{
+                marginLeft: "auto",
+                marginRight: "auto",
+                fontSize: "12px",
+                color: "rgba(255,255,255,0.5)",
+                fontFamily: "monospace",
+                display: "flex",
+              }}
+            >
+              index.ts
+            </div>
+          </div>
+
+          {/* Code content */}
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              padding: "16px 20px",
+              fontFamily: "monospace",
+              fontSize: "13px",
+              lineHeight: 1.7,
+              gap: "2px",
+            }}
+          >
+            <div style={{ display: "flex" }}>
+              <span style={{ color: "#f97583" }}>const</span>
+              <span style={{ color: "#e1e4e8" }}>&nbsp;response&nbsp;</span>
+              <span style={{ color: "#f97583" }}>=</span>
+              <span style={{ color: "#e1e4e8" }}>&nbsp;</span>
+              <span style={{ color: "#f97583" }}>await</span>
+              <span style={{ color: "#e1e4e8" }}>&nbsp;</span>
+              <span style={{ color: "#b392f0" }}>fetch</span>
+              <span style={{ color: "#e1e4e8" }}>(</span>
+            </div>
+            <div style={{ display: "flex", paddingLeft: "16px" }}>
+              <span style={{ color: "#9ecbff" }}>
+                "https://modelpicker.dev/api/v1/latest/coding"
+              </span>
+            </div>
+            <div style={{ display: "flex" }}>
+              <span style={{ color: "#e1e4e8" }}>);</span>
+            </div>
+            <div style={{ display: "flex" }}>
+              <span style={{ color: "#f97583" }}>const</span>
+              <span style={{ color: "#e1e4e8" }}>&nbsp;</span>
+              <span style={{ color: "#e1e4e8" }}>{"{"}&nbsp;</span>
+              <span style={{ color: "#79b8ff" }}>primary</span>
+              <span style={{ color: "#e1e4e8" }}>&nbsp;{"}"}</span>
+              <span style={{ color: "#e1e4e8" }}>&nbsp;</span>
+              <span style={{ color: "#f97583" }}>=</span>
+              <span style={{ color: "#e1e4e8" }}>&nbsp;</span>
+              <span style={{ color: "#f97583" }}>await</span>
+              <span style={{ color: "#e1e4e8" }}>&nbsp;response.</span>
+              <span style={{ color: "#b392f0" }}>json</span>
+              <span style={{ color: "#e1e4e8" }}>();</span>
+            </div>
+          </div>
+        </div>
+
+        {/* URL */}
         <div
           style={{
             display: "flex",
             alignItems: "center",
-            gap: "8px",
-            marginTop: "8px",
-            padding: "10px 20px",
-            borderRadius: "100px",
-            background: "rgba(255, 255, 255, 0.08)",
-            border: "1px solid rgba(255, 255, 255, 0.1)",
+            gap: "6px",
+            marginTop: "4px",
+            fontSize: "15px",
+            color: "#a1a1a1",
+            fontFamily: "monospace",
           }}
         >
           <div
             style={{
-              width: "8px",
-              height: "8px",
+              width: "7px",
+              height: "7px",
               borderRadius: "50%",
-              background: "#22c55e",
+              backgroundColor: "#22c55e",
               display: "flex",
             }}
           />
-          <span
-            style={{
-              fontSize: "16px",
-              color: "rgba(255, 255, 255, 0.8)",
-              fontFamily: "monospace",
-              display: "flex",
-            }}
-          >
-            modelpicker.dev
-          </span>
+          modelpicker.dev
         </div>
       </div>
     </div>,
